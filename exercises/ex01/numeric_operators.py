@@ -1,6 +1,6 @@
 """Ex01 Part 2 Homework."""
 
-__author__ = "730369129"
+__author__: str = "730369129"
 
 left_side: int = 8
 right_side: int = 5
