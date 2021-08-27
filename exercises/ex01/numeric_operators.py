@@ -1,5 +1,7 @@
 """Ex01 Part 2 Homework"""
 
+__author__ = "730369129"
+
 left_hand_side: int = 15
 right_hand_side: int = 10
 
@@ -9,5 +11,3 @@ print(str(left_hand_side) + " ** " + str(right_hand_side) + " is " + str(int(lef
 print(str(left_hand_side) + " / " + str(right_hand_side) + " is " + str(float(left_hand_side / right_hand_side)))
 print(str(left_hand_side) + " // " + str(right_hand_side) + " is " + str(int(left_hand_side // right_hand_side)))
 print(str(left_hand_side) + " % " + str(right_hand_side) + " is " + str(int(left_hand_side % right_hand_side)))
-
-__author__ = "730369129"
