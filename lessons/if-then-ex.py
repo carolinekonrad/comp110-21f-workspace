@@ -4,13 +4,13 @@ __author__ = "730369129"
 
 choice: int = int(input("Enter a number: "))
 
-if choice < 50:
-    if choice < 25:
-        print("A")
-    else:
-        print("B")
+if choice < 25:
+    print("A")
 else:
-    if choice > 75:
-        print("C")
+    if choice < 50:
+        print("B")
     else:
-        print("D")
+        if choice > 75:
+            print("C")
+        else:
+            print("D")
