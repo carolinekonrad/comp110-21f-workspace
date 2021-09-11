@@ -18,6 +18,7 @@ while indexing_spot < len(word) - 1:
     spot = 0
 
 if count > 0:
-    print(True)
+    print("Found duplicate: True")
 else:
-    print(False)
+    print("Found duplicate: False")
+
