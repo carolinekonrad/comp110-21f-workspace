@@ -21,4 +21,3 @@ if count > 0:
     print("Found duplicate: True")
 else:
     print("Found duplicate: False")
-
