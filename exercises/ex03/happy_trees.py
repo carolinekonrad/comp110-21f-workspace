@@ -4,8 +4,11 @@ __author__ = "730369129"
 
 TREE: str = '\U0001F332'
 integer_depth: int = int(input("Depth: "))
-number_of_checks: int = 0
+long_string: str = ""
+counter: int = 0
 
-
-while number_of_checks < integer_depth:
-    
+if integer_depth >= 0:
+    while counter < integer_depth:
+        long_string = long_string + TREE
+        print(long_string)
+        counter = counter + 1
