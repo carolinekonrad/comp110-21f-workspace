@@ -8,6 +8,7 @@ __author__ = "730369129"
 
 
 class Simpy:
+    """Creating a Simpy object."""
     values: list[float]
     
     def __init__(self, x: list[float]) -> None:
@@ -67,7 +68,7 @@ class Simpy:
         return Simpy(new_list)
 
     def __eq__(self, rhs: Union[float, Simpy]) -> list[bool]:
-        """CHeck if self's values are equal to rhs's."""
+        """Check if self's values are equal to rhs's."""
         list_bools: list[bool] = []
         i: int = 0
         if isinstance(rhs, float):
@@ -93,7 +94,16 @@ class Simpy:
                 list_bools.append(self.values[i] > rhs.values[i])
                 i += 1
         return list_bools
-    
-    def __getitem__(self, rhs: int) -> float:
-        """Printing value of self at index rhs."""
-        return self.values[rhs]
+
+    def __getitem__(self, rhs: Union[int, list[bool]]) -> Union[float, Simpy]:
+        """Get the items."""
+        if isinstance(rhs, int):
+            return self.values[rhs]
+        else:
+            i: int = 0
+            new_simpy: list[float] = []
+            while i < len(self.values):
+                if rhs[i] is True:
+                    new_simpy.append(self.values[i])
+                i += 1
+        return Simpy(new_simpy)
